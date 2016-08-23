@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+RewriteRule ^assets(.*)$ public/assets/$1 [QSA,L]
+RewriteRule ^(.*)$ public/index.php?/$1 [QSA,L]
+</IfModule>
